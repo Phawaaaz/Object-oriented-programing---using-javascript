@@ -305,3 +305,42 @@ console.log(AccountCl);
 // chainning-method
 acc1.deposit(300).deposit(500).withdraw(120).requestLoan(2300).withdraw(4000);
 console.log(acc1);
+
+// Here is how we use everdything in a class 
+class studentClass extends Personcl {
+  university = 'University of ilorin';
+  #studyHours = 0;
+
+  #course;
+
+  static numSubjects = 10;
+  constructor(fullName, birthYear, startYear, course, level) {
+    super(fullName, birthYear);
+    this.startYear = startYear;
+    this.course = course;
+    this.level = level;
+  }
+
+  introduce() {
+    console.log(`i study ${this.course} at ${this.university}`);
+  }
+
+  study(h){
+    this.#makeCoffe
+    this.#studyHours += h;
+  }
+  #makeCoffe(){
+    return 'Here is a coffe for you'
+  }
+  get testScore (){
+    return this._testScore
+  }
+  set testScore(score){
+    this._testScore = score<= 20? score : 0
+  }
+  static printCurriculum(){
+    console.log('curriculum for student')
+  }
+}
+
+// 
